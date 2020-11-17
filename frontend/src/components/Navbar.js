@@ -1,10 +1,8 @@
 import React from "react";
 import { Squeeze as Hamburger } from "hamburger-react";
 import Button from "@material-ui/core/Button";
-import { Announcement, Group, MenuBook, Storefront } from "@material-ui/icons";
-import line from "./../img/line.png";
-import logo from "./../img/logo.png";
-import Login from "./Login";
+import { Announcement, Group, MenuBook } from "@material-ui/icons";
+import logo from "./../img/logo.jpg";
 import "./Nav.css"
 
 function Navbar(props) {
@@ -38,7 +36,7 @@ function Navbar(props) {
 
     return (
         <>
-            <img src={line} className="line" alt="line" />
+            {/* <img src={line} className="line" alt="line" /> */}
             <Logo href="/" src={logo} class="logo" alt="logo" />
             {(!isSmallScreen || isNavVisible) && (
                 <nav className="nav my-auto">
@@ -57,12 +55,6 @@ function Navbar(props) {
                             comics
                         </Button>
                     </a>
-                    <a href="/merch">
-                        <Button color="primary" startIcon={<Storefront className="nav-icon" style={{ fontSize: "1.5rem" }} />} >
-                            market
-                        </Button>
-                    </a>
-                    <Login />
                 </nav>
             )}
             <div className="toggleDiv py-2">

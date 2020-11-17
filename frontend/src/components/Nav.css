@@ -8,11 +8,6 @@
 .nav-icon:hover {
     cursor: pointer;
 }
-.line {
-    position: absolute;
-    height: 10px;
-    width: 100%;
-}
 .logo {
     max-width: 70%;
     max-height: 3rem;
@@ -21,7 +16,7 @@
     margin-top: 10px;
     grid-area: nav;
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(3, auto);
     align-items: center;
     justify-items: center;
 }
