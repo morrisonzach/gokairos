@@ -1,0 +1,64 @@
+.navbar-sticky {
+  position: fixed!important;
+  box-shadow: 0.01rem 0.01rem 0.5rem black;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.nav-icon:hover {
+    cursor: pointer;
+}
+.line {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+}
+.logo {
+    max-width: 70%;
+    max-height: 3rem;
+}
+.nav {
+    margin-top: 10px;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-items: center;
+}
+.nav > a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+.header {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "logo nav";
+}
+.toggleDiv {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .header {
+        grid-template-areas: "logo toggleDiv" "nav nav";
+    }
+    .nav {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: none;
+        grid-row-gap: 20px;
+    }
+    .toggleDiv {
+        position: absolute!important;
+        height: 100%;
+        right: 0px;
+        top: 0;
+        grid-area: toggleDiv;
+        display: block;
+    }
+    .account {
+        display: none;
+    }
+}
