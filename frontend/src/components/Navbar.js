@@ -55,7 +55,7 @@ function Navbar(props) {
                         </Button>
                     </a>
                     <a href="/account">
-                        <IconButton variant="contained" aria-label="account">
+                        <IconButton aria-label="account">
                             <AccountBox className="nav-icon" style={{ fontSize: "2.5rem" }} />
                         </IconButton>
                     </a>
