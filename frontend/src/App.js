@@ -1,11 +1,18 @@
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Nav from './components/Nav';
 
 function App() {
   return (
-    <div>
-      <Nav />
-    </div>
+    <>
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Nav />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 

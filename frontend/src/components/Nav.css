@@ -16,7 +16,7 @@
     margin-top: 10px;
     grid-area: nav;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
     align-items: center;
     justify-items: center;
 }

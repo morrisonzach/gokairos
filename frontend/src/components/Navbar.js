@@ -1,9 +1,9 @@
 import React from "react";
 import { Squeeze as Hamburger } from "hamburger-react";
-import Button from "@material-ui/core/Button";
-import { Announcement, Group, MenuBook } from "@material-ui/icons";
+import { Button, IconButton } from "@material-ui/core";
+import { AccountBox, Assignment, Info, Redeem } from "@material-ui/icons";
 import logo from "./../img/logo.jpg";
-import "./Nav.css"
+import "./Nav.css";
 
 function Navbar(props) {
     const [isNavVisible, setIsNavVisible] = React.useState(false);
@@ -26,7 +26,7 @@ function Navbar(props) {
             handleMediaQueryChange(mediaQuery)
         };
     }, [isSmallScreen]);
-    const Logo = () => (
+    const Logo = (props) => (
         <div style={{ marginTop: "10px" }}>
             <a href={props.href}>
                 <img src={props.src} className={props.class} alt={props.alt} />
@@ -36,24 +36,28 @@ function Navbar(props) {
 
     return (
         <>
-            {/* <img src={line} className="line" alt="line" /> */}
             <Logo href="/" src={logo} class="logo" alt="logo" />
             {(!isSmallScreen || isNavVisible) && (
                 <nav className="nav my-auto">
-                    <a href="/news">
-                        <Button color="primary" startIcon={<Announcement className="nav-icon" style={{ fontSize: "1.5rem" }} />} >
-                            news
+                    <a href="/about">
+                        <Button color="primary" startIcon={<Info className="nav-icon" style={{ fontSize: "1.5rem" }} />} >
+                            about
                         </Button>
                     </a>
-                    <a href="/creators">
-                        <Button color="primary" startIcon={<Group className="nav-icon" style={{ fontSize: "1.5rem" }} />} >
-                            creators
+                    <a href="/projects">
+                        <Button color="primary" startIcon={<Assignment className="nav-icon" style={{ fontSize: "1.5rem" }} />} >
+                            projects
                         </Button>
                     </a>
-                    <a href="/comics">
-                        <Button color="primary" startIcon={<MenuBook className="nav-icon" style={{ fontSize: "1.5rem" }} />} >
-                            comics
+                    <a href="/donate">
+                        <Button color="primary" startIcon={<Redeem className="nav-icon" style={{ fontSize: "1.5rem" }} />} >
+                            donate
                         </Button>
+                    </a>
+                    <a href="/account">
+                        <IconButton variant="contained" color="primary" aria-label="account">
+                            <AccountBox className="nav-icon" style={{ fontSize: "2.5rem" }} />
+                        </IconButton>
                     </a>
                 </nav>
             )}

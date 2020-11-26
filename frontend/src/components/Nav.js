@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "./Navbar";
-import './Nav.css';
+import "./Nav.css";
 
 function Nav(props) {
     const [isSticky, setSticky] = React.useState(false);
