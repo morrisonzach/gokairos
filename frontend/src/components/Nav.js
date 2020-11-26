@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Toolbar from '@material-ui/core/Toolbar';
 import Navbar from "./Navbar";
 import "./Nav.css";
 
@@ -7,7 +8,7 @@ function Nav(props) {
     const ref = React.useRef(null);
     const handleScroll = () => {
         if (ref.current) {
-            setSticky(ref.current.getBoundingClientRect().top <= 0);
+            setSticky(ref.current.getBoundingClientRect().top <= 1);
         }
     };
 
@@ -20,9 +21,14 @@ function Nav(props) {
     }, []);
 
     return (
-        <header ref={ref} className={isSticky ? "navbar-sticky header mb-3 pl-2" : "header mb-3 pl-2"}>
-            <Navbar />
-        </header>
+        <>
+            <header ref={ref} className={isSticky ? "navbar-sticky header pl-2" : "header pl-2"}>
+                <Navbar />
+            </header>
+            <div className={isSticky ? "" : "invis"} >
+                <Toolbar />
+            </div>
+        </>
     );
 }
 

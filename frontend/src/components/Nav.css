@@ -1,3 +1,6 @@
+.invis {
+    display: none;
+}
 .navbar-sticky {
   position: fixed!important;
   box-shadow: 0.01rem 0.01rem 0.5rem black;
