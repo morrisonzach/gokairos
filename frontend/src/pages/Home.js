@@ -1,9 +1,7 @@
 function Home() {
     return (
-        <div style={{ height: "200vh", backgroundColor: "orange" }}>
-            <p>
-
-            </p>
+        <div className="container" style={{ height: "200vh", backgroundColor: "orange" }}>
+            yo yo yo
         </div>
     );
 }

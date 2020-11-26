@@ -40,22 +40,22 @@ function Navbar(props) {
             {(!isSmallScreen || isNavVisible) && (
                 <nav className="nav my-auto">
                     <a href="/about">
-                        <Button color="primary" startIcon={<Info className="nav-icon" style={{ fontSize: "1.5rem" }} />} >
+                        <Button startIcon={<Info className="nav-icon" style={{ fontSize: "1.5rem" }} />} >
                             about
                         </Button>
                     </a>
                     <a href="/projects">
-                        <Button color="primary" startIcon={<Assignment className="nav-icon" style={{ fontSize: "1.5rem" }} />} >
+                        <Button startIcon={<Assignment className="nav-icon" style={{ fontSize: "1.5rem" }} />} >
                             projects
                         </Button>
                     </a>
                     <a href="/donate">
-                        <Button color="primary" startIcon={<Redeem className="nav-icon" style={{ fontSize: "1.5rem" }} />} >
+                        <Button startIcon={<Redeem className="nav-icon" style={{ fontSize: "1.5rem" }} />} >
                             donate
                         </Button>
                     </a>
                     <a href="/account">
-                        <IconButton variant="contained" color="primary" aria-label="account">
+                        <IconButton variant="contained" aria-label="account">
                             <AccountBox className="nav-icon" style={{ fontSize: "2.5rem" }} />
                         </IconButton>
                     </a>

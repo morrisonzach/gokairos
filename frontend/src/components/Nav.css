@@ -16,7 +16,6 @@
     max-height: 3rem;
 }
 .nav {
-    margin-top: 10px;
     grid-area: nav;
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -27,6 +26,9 @@
     font-size: 1.5rem;
     text-decoration: none;
     color: black;
+}
+.nav > a > *{
+    text-transform: none;
 }
 .header {
     background-color: white;
