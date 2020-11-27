@@ -16,6 +16,8 @@
     max-height: 3rem;
 }
 .nav {
+    height: 100%;
+    width: 100%;
     grid-area: nav;
     display: grid;
     grid-template-columns: repeat(4, auto);

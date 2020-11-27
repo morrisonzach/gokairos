@@ -19,6 +19,11 @@ function Home() {
             title: "2",
             body: "lorem ipsum dolor sit amet",
             img: imgs[1]
+        },
+        {
+            title: "3",
+            body: "lorem ipsum dolor sit amet",
+            img: imgs[2]
         }
     ];
     const slides = slidesInfo.map((slide) => (
@@ -29,7 +34,7 @@ function Home() {
             <p>
                 {slide.body}
             </p>
-
+            <img style={{ width: "100%" }} src={slide.img} alt="home slide" />
         </div>
     ));
     return (

@@ -8,6 +8,15 @@ function App() {
     <>
       <Router>
         <Switch>
+          <Route path="/about">
+            <Nav />
+          </Route>
+          <Route path="/donate">
+            <Nav />
+          </Route>
+          <Route path="/projects">
+            <Nav />
+          </Route>
           <Route path="/">
             <Nav />
             <Home />

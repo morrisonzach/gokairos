@@ -2,7 +2,7 @@ import React from "react";
 import { Squeeze as Hamburger } from "hamburger-react";
 import { Button, IconButton } from "@material-ui/core";
 import { AccountBox, Assignment, Info, Redeem } from "@material-ui/icons";
-import logo from "./../img/logo.jpg";
+import logo from "./../img/gokairos.png";
 import "./Nav.css";
 
 function Navbar(props) {
