@@ -31,7 +31,7 @@ function Home() {
         </div>
     ));
     return (
-        <div className="container" style={{ height: "200vh", backgroundColor: "orange" }}>
+        <div className="container" style={{ height: "200vh" }}>
             <Carousel slides={slides} {...settings} />
         </div>
     );
