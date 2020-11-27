@@ -1,4 +1,5 @@
 import Carousel from './../components/Carousel';
+import imgs from './../components/HomeImgArray';
 
 function Home() {
     const settings = {
@@ -12,12 +13,12 @@ function Home() {
         {
             title: "1",
             body: "lorem ipsum dolor sit amet",
-            img: null
+            img: imgs[0]
         },
         {
             title: "2",
             body: "lorem ipsum dolor sit amet",
-            img: null
+            img: imgs[1]
         }
     ];
     const slides = slidesInfo.map((slide) => (
@@ -28,6 +29,7 @@ function Home() {
             <p>
                 {slide.body}
             </p>
+
         </div>
     ));
     return (
