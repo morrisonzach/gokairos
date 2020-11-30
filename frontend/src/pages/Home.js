@@ -6,10 +6,9 @@ function Home() {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 400,
         autoplay: true,
         autoplaySpeed: 10000,
-        cssEase: "linear",
         slidesToShow: 1,
         slidesToScroll: 1
     }
