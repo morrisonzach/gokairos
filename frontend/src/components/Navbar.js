@@ -54,7 +54,7 @@ function Navbar(props) {
                             donate
                         </Button>
                     </a>
-                    <a href="/account">
+                    <a>
                         <IconButton aria-label="account">
                             <AccountBox className="nav-icon" style={{ fontSize: "2.5rem" }} />
                         </IconButton>

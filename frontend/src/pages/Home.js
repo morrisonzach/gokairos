@@ -1,5 +1,6 @@
 import Carousel from './../components/Carousel';
 import imgs from './../components/HomeImgArray';
+import wellPic from './../img/well.png';
 import './Home.css';
 
 function Home() {
@@ -8,7 +9,7 @@ function Home() {
         infinite: true,
         speed: 400,
         autoplay: true,
-        autoplaySpeed: 10000,
+        autoplaySpeed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1
     }
@@ -34,18 +35,22 @@ function Home() {
     ];
     const slides = slidesInfo.map((slide) => (
         <div key={slide.id}>
-            <h1>
-                {slide.title}
-            </h1>
-            <p>
-                {slide.body}
-            </p>
             <img style={{ width: "100%" }} src={slide.img} alt="home slide" />
         </div>
     ));
     return (
         <div className="container" style={{ height: "200vh" }}>
             <Carousel slides={slides} {...settings} />
+            <div className="row">
+                <div className="col-md-6 my-5 text-center">
+                    <h1>
+                        Kairos International
+                    </h1>
+                </div>
+                <div className="col-md-6 my-5 text-center">
+                    <img src={wellPic} alt="picture of a well" />
+                </div>
+            </div>
         </div>
     );
 }
